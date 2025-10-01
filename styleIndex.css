@@ -224,3 +224,222 @@ body {
   background: #e15b40;
   color: #fff;
 }
+
+
+/* ABOUT SECTION STYLES
+.about-section {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f1f1f1;
+  padding: 4rem 2rem;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.glitch {
+  font-size: 3rem;
+  color: #58a6ff;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.glitch::before {
+  animation: glitchTop 2s infinite linear alternate-reverse;
+  color: #f0f;
+  top: -2px;
+}
+
+.glitch::after {
+  animation: glitchBottom 2s infinite linear alternate-reverse;
+  color: #0ff;
+  bottom: -2px;
+}
+
+@keyframes glitchTop {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  5% { clip: rect(0, 9999px, 5px, 0); }
+  10% { clip: rect(0, 9999px, 0, 0); }
+  15% { clip: rect(0, 9999px, 5px, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+@keyframes glitchBottom {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  5% { clip: rect(5px, 9999px, 10px, 0); }
+  10% { clip: rect(0, 9999px, 0, 0); }
+  15% { clip: rect(5px, 9999px, 10px, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 2rem 0;
+}
+
+.highlights {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.highlights ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.highlights li {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.highlights li::before {
+  content: "🛠️";
+  position: absolute;
+  left: 0;
+}
+
+.about-section {
+  position: relative;
+  background: url('computer.png') no-repeat center center/cover;
+  color: #f1f1f1;
+  padding: 6rem 2rem;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Optional dark overlay for better text visibility */
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* adjust opacity here */
+  z-index: 0;
+}
+
+/* Ensure text content sits above overlay */
+.about-container {
+  position: relative;
+  z-index: 2;
+} */
+
+/* ABOUT SECTION - Cyber Style */
+.about-section {
+  position: relative;
+  padding: 6rem 2rem;
+  color: #f1f1f1;
+  background: url('https://images.unsplash.com/photo-1605379399642-870262d3d051') no-repeat center center/cover;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.overlay-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.about-container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.animated-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #00fff7;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: flicker 2s infinite alternate;
+}
+
+.animated-name::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  color: #ff00ff;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+@keyframes flicker {
+  0%   { opacity: 1; text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7; }
+  50%  { opacity: 0.8; text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff; }
+  100% { opacity: 1; text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7; }
+}
+
+.about-description {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(3px);
+  animation: slideUp 1s ease forwards;
+}
+
+.highlight {
+  color: #00fff7;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00fff7;
+}
+
+.highlights {
+  text-align: left;
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  animation: slideUp 1.2s ease forwards;
+}
+
+.highlights ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.highlights li {
+  margin: 0.75rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.highlights li::before {
+  content: "💻";
+  position: absolute;
+  left: 0;
+}
+
+/* Entry animation */
+@keyframes slideUp {
+  0%   { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
